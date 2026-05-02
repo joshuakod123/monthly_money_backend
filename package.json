@@ -1,0 +1,19 @@
+{
+  "name": "dividend-tree-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.105.1",
+    "adm-zip": "^0.5.17",
+    "axios": "^1.15.2",
+    "dotenv": "^17.4.2",
+    "xml2js": "^0.6.2"
+  }
+}
