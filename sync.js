@@ -214,8 +214,7 @@ async function syncAll() {
 
   // 진행 상황 카운터
   let processed = 0;
-  
-  const testCorps = allCorps.slice(0, 50);
+
   for (const corp of allCorps) {
     processed++;
     
