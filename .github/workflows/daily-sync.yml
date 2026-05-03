@@ -4,12 +4,12 @@ on:
   schedule:
     # 매일 04:00 KST = 19:00 UTC (전날)
     - cron: '0 19 * * *'
-  workflow_dispatch:  # 수동 실행 버튼 활성화
+  workflow_dispatch:  # 수동 실행 버튼
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 360   # 6시간 (전체 시장 sync는 2-3시간 예상)
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
