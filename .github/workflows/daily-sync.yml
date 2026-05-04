@@ -1,10 +1,10 @@
-name: Daily Stock Sync
+name: Monthly Stock Sync
 
 on:
   schedule:
-    # 매일 04:00 KST = 19:00 UTC (전날)
-    - cron: '0 19 * * *'
-  workflow_dispatch:  # 수동 실행 버튼
+    # 매월 1일 19:00 UTC에 실행 (한국 시간으로는 매월 2일 새벽 04:00에 해당합니다)
+    - cron: '0 19 1 * *'
+  workflow_dispatch:  # 수동 실행 버튼 (원할 때 언제든 GitHub 웹에서 버튼으로 실행 가능)
 
 jobs:
   sync:
